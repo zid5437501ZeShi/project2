@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the CSV file
-vol_ret_mrg_df = pd.read_csv('D:\\Users\\13161\\PycharmProjects\\project2\\project2\\project2\\Vol_Ret_mrg_df.csv')
+vol_ret_mrg_df = pd.read_csv('/project2/Vol_Ret_mrg_df.csv')
 
 # Convert the Year_Month column to datetime format
 vol_ret_mrg_df['Year_Month'] = pd.to_datetime(vol_ret_mrg_df['Year_Month'], format='%Y-%m').dt.to_period('M')
