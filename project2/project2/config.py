@@ -4,7 +4,7 @@ Configuration options for the project2 package
 
 """
 # IMPORTANT: Please do NOT modify this file
-#tes
+
 import os
 import toolkit_config as tcfg
 
