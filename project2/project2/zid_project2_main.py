@@ -24,6 +24,8 @@
 # <COMPLETE THIS PART>
 import config as cfg
 import util
+import os
+import toolkit_config as tcfg
 
 
 # We've imported other needed scripts and defined aliases. Please keep using the same aliases for them in this project.
@@ -241,6 +243,46 @@ def get_cumulative_ret(df):
 #
 #     To answer the questions below, you need to run portfolio_main function in this script
 #     with the following parameter values:
+ROOTDIR = os.path.join(tcfg.PRJDIR, 'project2')
+DATADIR = os.path.join(ROOTDIR, 'data')
+TICMAP = {
+        'AAL'    : 'American Airlines Group Inc',
+        'AAPL'   : 'Apple Inc.',
+        'ABBV'   : 'AbbVie Inc.',
+        'BABA'   : 'Alibaba Group Holding Limited',
+        'BAC'    : 'Bank of America Corporation',
+        'CSCO'   : 'Cisco Systems, Inc.',
+        'DAL'    : 'Delta Air Lines, Inc.',
+        'DIS'    : 'The Walt Disney Company',
+        'FB'     : 'Facebook, Inc.',
+        'GE'     : 'General Electric Company',
+        'INTC'   : 'Intel Corporation',
+        'JNJ'    : 'Johnson & Johnson',
+        'KO'     : 'The Coca-Cola Company',
+        'MSFT'   : 'Microsoft Corporation',
+        'NVDA'   : 'NVIDIA Corporation',
+        'ORCL'   : 'Oracle Corporation',
+        'PFE'    : 'Pfizer Inc.',
+        'PG'     : 'The Procter & Gamble Company',
+        'PYPL'   : 'PayPal Holdings, Inc.',
+        'T'      : 'AT&T Inc. (T)',
+        'TSLA'   : 'Tesla, Inc.',
+        'TSM'    : 'Taiwan Semiconductor Manufacturing Company Limited',
+        'V'      : 'Visa Inc.',
+        }
+
+tickers = sorted(TICMAP.keys())
+start = '2000-12-29'
+end = '2021-08-31'
+cha_name = 'vol'
+ret_freq_use = ['Daily']
+q = 3
+dict_ret, df_cha, df_portfolios = portfolio_main(tickers, start, end, cha_name, ret_freq_use, q)
+# Save outputs to files
+dict_ret['Daily'].to_csv('DM_Ret_dict.csv')
+df_cha.to_csv('Vol_Ret_mrg_df.csv')
+df_portfolios.to_csv('EW_LS_pf_df.csv')
+
 #     tickers: all tickers included in the dictionary config.TICMAP,
 #     start: '2000-12-29',
 #     end: '2021-08-31',
@@ -256,13 +298,13 @@ def get_cumulative_ret(df):
 #     ticker for this stock.
 #     Use the output dictionary, DM_Ret_dict, and auxiliary function in this script
 #     to do the calculation.
-Q1_ANSWER = '?'
+Q1_ANSWER = 'nvda'
 
 
 # Q2: What is the daily average return of the stock in question 1 for the year 2008.
 #     Use the output dictionary, DM_Ret_dict, and auxiliary function in this script
 #     to do the calculation.
-Q2_ANSWER = '?'
+Q2_ANSWER = '-0.0042408381445022845'
 
 
 # Q3: Which stock in your sample has the highest average monthly return for the
@@ -270,26 +312,26 @@ Q2_ANSWER = '?'
 #     ticker for this stock.
 #     Use the output dictionary, DM_Ret_dict, and auxiliary function in this script
 #     to do the calculation.
-Q3_ANSWER = '?'
+Q3_ANSWER = 'aapl'
 
 
 # Q4: What is the average monthly return of the stock in question 3 for the year 2019.
 #     Use the output dictionary, DM_Ret_dict, and auxiliary function in this script
 #     to do the calculation.
-Q4_ANSWER = '?'
+Q4_ANSWER = '0.05663463742976457'
 
 
 # Q5: What is the average monthly total volatility for stock 'TSLA' in the year 2010?
 #     Use the output dataframe, Vol_Ret_mrg_df, and auxiliary function in this script
 #     to do the calculation.
-Q5_ANSWER = '?'
+Q5_ANSWER = '0.041407897077777624'
 
 
 # Q6: What is the ratio of the average monthly total volatility for stock 'V'
 #     in the year 2008 to that in the year 2018? Keep 1 decimal places.
 #     Use the output dataframe, Vol_Ret_mrg_df, and auxiliary function in this script
 #     to do the calculation.
-Q6_ANSWER = '?'
+Q6_ANSWER = '2.9'
 
 
 # Q7: How many effective year-month for stock 'TSLA' in year 2010. An effective year-month

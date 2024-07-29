@@ -245,12 +245,12 @@ def merge_tables(ret, df_cha, cha_name):
     """
     # <COMPLETE THIS PART>
     df_ret = ret['Monthly'].copy()
-    df_cha_copy = df_cha.copy()
-    df_cha_copy = df_cha_copy.add_prefix(f'{cha_name}_')
-    df_cha_shifted = df_cha_copy.shift(1)
-    df_merged = df_ret.merge(df_cha_shifted, left_index=True, right_index=True, how='left')
+    df_cha = df_cha.shift(1)
+    if cha_name == 'str':
+        df_ret = df_ret.join()
+    df_merger = df_ret.merge(df_cha, left_index=True, right_index=True, how='left')
 
-    return df_merged
+    return df_merger
 
 # ------------------------------------------------------------------------------------
 # Part 5.2: Read the cha_main function and understand the workflow in this script
