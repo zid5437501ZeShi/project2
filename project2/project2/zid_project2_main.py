@@ -339,28 +339,28 @@ Q6_ANSWER = '2.9'
 #     are not null.
 #     Use the output dataframe, Vol_Ret_mrg_df, to do the calculation.
 #     Answer should be an integer
-Q7_ANSWER = '?'
+Q7_ANSWER = '5'
 
 
 # Q8: How many rows and columns in the EW_LS_pf_df data frame?
 #     The answer string should only include two integers separating by a comma.
 #     The first number represents number of rows.
 #     Don't include any other signs or letters.
-Q8_ANSWER = '?'
+Q8_ANSWER = '235rows,5columns'
 
 
 # Q9: What is the average equal weighted portfolio return of the quantile with the
 #     lowest total volatility for the year 2019?
 #     Use the output dataframe, EW_LS_pf_d, and auxiliary function in this script
 #     to do the calculation.
-Q9_ANSWER = '?'
+Q9_ANSWER = '0.013781479943698327'
 
 
 # Q10: What is the cumulative portfolio return of the total volatility long-short portfolio
 #      over the whole sample period?
 #      Use the output dataframe, EW_LS_pf_d, and auxiliary function in this script
 #     to do the calculation.
-Q10_ANSWER = '?'
+Q10_ANSWER = '2.377891146210645'
 
 
 # ----------------------------------------------------------------------------
@@ -383,13 +383,31 @@ Q10_ANSWER = '?'
 # Please replace the '?' of ls_bar, ls_t and n_obs variables below
 # with the respective values of the 'ls' column in EW_LS_pf_df from Part 8,
 # keep 4 decimal places if it is not an integer:
-ls_bar = '?'
-ls_t = '?'
-n_obs = '?'
+ls_bar = '0.0084'
+ls_t = '1.5959'
+n_obs = '235'
 
 
 # <ADD THE t_stat FUNCTION HERE>
+import pandas as pd
+from scipy import stats
+ew_ls_pf_df = pd.read_csv('EW_LS_pf_df.csv')
+def t_stat(df: pd.DataFrame):
+    ls_data = df['ls'].dropna()
+    ls_bar = ls_data.mean()
+    ls_std = ls_data.std(ddof=1)
+    n_obs = len(ls_data)
+    ls_t = ls_bar / (ls_std / (n_obs ** 0.5))
 
+    result = pd.DataFrame({
+        'ls_bar': [round(ls_bar, 4)],
+        'ls_t': [round(ls_t, 4)],
+        'n_obs': [n_obs]
+    }, index=['ls'])
+
+    return result
+result = t_stat(ew_ls_pf_df)
+print(result)
 
 # ----------------------------------------------------------------------------
 # Part 10: share your team's project 2 git log
