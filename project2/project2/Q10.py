@@ -18,4 +18,3 @@ ls_cumulative_return = cumulative_return['ls'].iloc[-1]
 
 print(f'The cumulative portfolio return of the total volatility long-short portfolio over the whole sample period: {ls_cumulative_return}')
 
-#testtt
