@@ -171,7 +171,7 @@ def get_avg(df: pd.DataFrame, year):
         dtype: float64
 
     """
-    # <COMPLETE THIS PART>
+
     df_year = df[df.index.year == year]
     avg_series = df_year.mean()
 
@@ -204,7 +204,7 @@ def get_cumulative_ret(df):
         where r1, ..., rN represents monthly returns
 
     """
-    # <COMPLETE THIS PART>
+
     df = df.sort_index()
     df = df.add(1)
     df = df.cumprod()
