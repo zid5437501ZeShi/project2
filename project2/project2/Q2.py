@@ -19,3 +19,4 @@ nvda_avg_daily_return_2008 = nvda_returns_2008.mean()
 Q2_ANSWER = nvda_avg_daily_return_2008
 print(f"The average daily return for NVDA in 2008 is {Q2_ANSWER}.")
 
+1234
