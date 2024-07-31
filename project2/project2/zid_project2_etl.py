@@ -195,7 +195,7 @@ def daily_return_cal(prc):
      - Ensure that the returns do not contain any entries with null values.
 
     """
-    # <COMPLETE THIS PART>
+
     daily_returns = prc.pct_change().dropna(how='all')
     daily_returns.name = prc.name
 
@@ -305,7 +305,7 @@ def monthly_return_cal(prc):
      - Ensure that the returns do not contain any entries with null values.
 
     """
-    # <COMPLETE THIS PART>
+
     prc.index = pd.to_datetime(prc.index)
     prc_monthly = prc.resample('M').last()
     prc_monthly_return = prc_monthly.pct_change().dropna()
@@ -430,7 +430,7 @@ def aj_ret_dict(tickers, start, end):
         memory usage: 24.0 bytes
         ----------------------------------------
     """
-    # <COMPLETE THIS PART>
+
     daily_returns = {}
     monthly_returns = {}
 
