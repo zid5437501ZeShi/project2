@@ -9,7 +9,7 @@
 # Note: please keep the aliases consistent throughout the project.
 #       For details, review the import statements in zid_project2_main.py
 
-# <COMPLETE THIS PART>
+
 import os
 import util
 import config as cfg
@@ -100,7 +100,7 @@ def read_prc_csv(tic, start, end, prc_col='Adj Close'):
 
     """
 
-    # <COMPLETE THIS PART>
+
     tic = tic.lower()
     path = os.path.join(cfg.DATADIR, f'{tic}_prc.csv')
     df = pd.read_csv(path, index_col=0, parse_dates=True)
