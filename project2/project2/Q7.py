@@ -9,3 +9,5 @@ effective_year_months = tsla_2010_df['tsla'].notnull() & tsla_2010_df['tsla_vol'
 effective_count = effective_year_months.sum()
 
 print(f'Number of effective year-months for TSLA in 2010: {effective_count}')
+
+要拿HDDDDDDD
