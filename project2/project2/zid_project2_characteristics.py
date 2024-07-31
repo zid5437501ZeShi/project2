@@ -9,7 +9,7 @@
 # Note: please keep the aliases consistent throughout the project.
 #       For details, review the import statements in zid_project2_main.py
 
-# <COMPLETE THIS PART>
+
 import zid_project2_etl as etl
 import pandas as pd
 import util
@@ -149,7 +149,7 @@ def vol_cal(ret, cha_name, ret_freq_use: list):
 
     """
 
-    # <COMPLETE THIS PART>
+
     if 'Daily' not in ret_freq_use:
         raise ValueError("ret_freq_use must contain 'Daily' for this calculation.")
 
@@ -243,7 +243,7 @@ def merge_tables(ret, df_cha, cha_name):
        ensuring that modifications to the copied DataFrame do not affect the original DataFrame stored in the dictionary
      - Read shift() documentations to understand how to shift the values of a DataFrame along a specified axis
     """
-    # <COMPLETE THIS PART>
+
     df_ret = ret['Monthly'].copy()
     df_cha = df_cha.shift(1)
     if cha_name == 'str':
@@ -299,7 +299,7 @@ def cha_main(ret, cha_name, ret_freq_use: list):
         The function assumes that `vol_input_sanity_check`, `vol_cal`, and `merge_tables` are defined elsewhere
         in the module with appropriate logic to handle the inputs and outputs as described.
     """
-    # <COMPLETE THIS PART>
+
     vol_input_sanity_check(ret, cha_name, ret_freq_use)
     df_vol = vol_cal(ret, cha_name, ret_freq_use)
     monthly_returns = ret['Monthly']
@@ -453,5 +453,5 @@ if __name__ == "__main__":
     # _test_vol_input_sanity_check(ret_dict, 'vol', ['Daily',])
     # _test_vol_cal(ret_dict, 'vol', ['Daily',])
     # _test_merge_tables(ret_dict, 'vol', ['Daily',])
-    _test_cha_main(ret_dict, 'vol', ['Daily',])
+    # _test_cha_main(ret_dict, 'vol', ['Daily',])
 
