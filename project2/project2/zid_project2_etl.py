@@ -100,7 +100,6 @@ def read_prc_csv(tic, start, end, prc_col='Adj Close'):
 
     """
 
-    # <COMPLETE THIS PART>
     tic = tic.lower()
     path = os.path.join(cfg.DATADIR, f'{tic}_prc.csv')
     df = pd.read_csv(path, index_col=0, parse_dates=True)
