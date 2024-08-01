@@ -15,3 +15,5 @@ lowest_volatility_quantile_avg_return = avg_return_2019.idxmin()
 
 print(f'The average equal weighted portfolio return of the quantile with the lowest total volatility in 2019: {avg_return_2019[lowest_volatility_quantile_avg_return]}')
 
+12.0000000amamama
+
