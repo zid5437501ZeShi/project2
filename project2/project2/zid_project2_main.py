@@ -298,13 +298,13 @@ df_portfolios.to_csv('EW_LS_pf_df.csv')
 #     ticker for this stock.
 #     Use the output dictionary, DM_Ret_dict, and auxiliary function in this script
 #     to do the calculation.
-Q1_ANSWER = 'nvda'
+Q1_ANSWER = nvda
 
 
 # Q2: What is the daily average return of the stock in question 1 for the year 2008.
 #     Use the output dictionary, DM_Ret_dict, and auxiliary function in this script
 #     to do the calculation.
-Q2_ANSWER = '-0.0042408381445022845'
+Q2_ANSWER = -0.0042408381445022845
 
 
 # Q3: Which stock in your sample has the highest average monthly return for the
@@ -312,26 +312,26 @@ Q2_ANSWER = '-0.0042408381445022845'
 #     ticker for this stock.
 #     Use the output dictionary, DM_Ret_dict, and auxiliary function in this script
 #     to do the calculation.
-Q3_ANSWER = 'aapl'
+Q3_ANSWER = aapl
 
 
 # Q4: What is the average monthly return of the stock in question 3 for the year 2019.
 #     Use the output dictionary, DM_Ret_dict, and auxiliary function in this script
 #     to do the calculation.
-Q4_ANSWER = '0.05663463742976457'
+Q4_ANSWER = 0.05663463742976457
 
 
 # Q5: What is the average monthly total volatility for stock 'TSLA' in the year 2010?
 #     Use the output dataframe, Vol_Ret_mrg_df, and auxiliary function in this script
 #     to do the calculation.
-Q5_ANSWER = '0.041407897077777624'
+Q5_ANSWER = 0.041407897077777624
 
 
 # Q6: What is the ratio of the average monthly total volatility for stock 'V'
 #     in the year 2008 to that in the year 2018? Keep 1 decimal places.
 #     Use the output dataframe, Vol_Ret_mrg_df, and auxiliary function in this script
 #     to do the calculation.
-Q6_ANSWER = '2.9'
+Q6_ANSWER = 2.9
 
 
 # Q7: How many effective year-month for stock 'TSLA' in year 2010. An effective year-month
@@ -339,28 +339,28 @@ Q6_ANSWER = '2.9'
 #     are not null.
 #     Use the output dataframe, Vol_Ret_mrg_df, to do the calculation.
 #     Answer should be an integer
-Q7_ANSWER = '5'
+Q7_ANSWER = 5
 
 
 # Q8: How many rows and columns in the EW_LS_pf_df data frame?
 #     The answer string should only include two integers separating by a comma.
 #     The first number represents number of rows.
 #     Don't include any other signs or letters.
-Q8_ANSWER = '235rows,5columns'
+Q8_ANSWER = 235rows,5columns
 
 
 # Q9: What is the average equal weighted portfolio return of the quantile with the
 #     lowest total volatility for the year 2019?
 #     Use the output dataframe, EW_LS_pf_d, and auxiliary function in this script
 #     to do the calculation.
-Q9_ANSWER = '0.013781479943698327'
+Q9_ANSWER = 0.013781479943698327
 
 
 # Q10: What is the cumulative portfolio return of the total volatility long-short portfolio
 #      over the whole sample period?
 #      Use the output dataframe, EW_LS_pf_d, and auxiliary function in this script
 #     to do the calculation.
-Q10_ANSWER = '2.377891146210645'
+Q10_ANSWER = 2.377891146210645
 
 
 # ----------------------------------------------------------------------------
@@ -383,9 +383,9 @@ Q10_ANSWER = '2.377891146210645'
 # Please replace the '?' of ls_bar, ls_t and n_obs variables below
 # with the respective values of the 'ls' column in EW_LS_pf_df from Part 8,
 # keep 4 decimal places if it is not an integer:
-ls_bar = '0.0084'
-ls_t = '1.5959'
-n_obs = '235'
+ls_bar = 0.0084
+ls_t = 1.5959
+n_obs = 235
 
 
 import pandas as pd
@@ -430,7 +430,7 @@ print(result)
 # .......
 #
 # Please replace the """?""" with your team's project 2 git log:
-git_log = """cab2c29	zid5444164xuanluo	Thu Aug 1 19:32:41 2024 +1000	Paste Presentation Link
+git_log = cab2c29	zid5444164xuanluo	Thu Aug 1 19:32:41 2024 +1000	Paste Presentation Link
 1368de4	zid5356208JingyiDing	Thu Aug 1 19:26:27 2024 +1000	test Q2 and Q5
 d9ca963	zid5356208JingyiDing	Thu Aug 1 19:23:40 2024 +1000	test Q1
 ebda50b	zid5444164xuanluo	Thu Aug 1 13:48:47 2024 +1000	change the test code
@@ -470,7 +470,7 @@ d9e61b3	zid5437501ZeShi	Mon Jul 29 22:29:03 2024 +1000	Q1-Q6 and data result dat
 829ebeb	zid5437501ZeShi	Mon Jul 29 16:58:23 2024 +1000	testt
 c79d457	zid5437501ZeShi	Mon Jul 29 16:57:51 2024 +1000	for testing
 a9e6766	zid5437501ZeShi	Mon Jul 29 16:57:30 2024 +1000	for testing
-6b5c1cc	zid5437501ZeShi	Mon Jul 29 16:10:25 2024 +1000	Add files via upload"""
+6b5c1cc	zid5437501ZeShi	Mon Jul 29 16:10:25 2024 +1000	Add files via upload
 
 # ----------------------------------------------------------------------------
 # Part 11: project 2 mini-presentation
@@ -495,8 +495,8 @@ a9e6766	zid5437501ZeShi	Mon Jul 29 16:57:30 2024 +1000	for testing
 # Please replace the """?""" with your team's presentation video link.
 # If you have set a password, please replace the """?""" with the actual password to ensure accessibility,
 # or leave the Presentation_Password variable as it is.
-Presentation_link = """https://youtu.be/eege6rjTVm8"""
-Presentation_Password = """No password"""
+Presentation_link = https://youtu.be/eege6rjTVm8
+Presentation_Password = No password
 
 
 def _test_get_avg():
