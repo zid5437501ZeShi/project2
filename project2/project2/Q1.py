@@ -24,7 +24,7 @@ print(f"The stock with the lowest average daily return in 2008 is {lowest_avg_re
 
 # Set the Q1_ANSWER
 Q1_ANSWER = lowest_avg_return_stock
-Q1_ANSWER
-Q1_ANSWER
+
+
 
 
