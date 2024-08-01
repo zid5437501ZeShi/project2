@@ -430,7 +430,7 @@ print(result)
 # .......
 #
 # Please replace the """?""" with your team's project 2 git log:
-git_log =
+git_log ='''
 cab2c29	zid5444164xuanluo	Thu Aug 1 19:32:41 2024 +1000	Paste Presentation Link
 1368de4	zid5356208JingyiDing	Thu Aug 1 19:26:27 2024 +1000	test Q2 and Q5
 d9ca963	zid5356208JingyiDing	Thu Aug 1 19:23:40 2024 +1000	test Q1
@@ -471,7 +471,7 @@ d9e61b3	zid5437501ZeShi	Mon Jul 29 22:29:03 2024 +1000	Q1-Q6 and data result dat
 829ebeb	zid5437501ZeShi	Mon Jul 29 16:58:23 2024 +1000	testt
 c79d457	zid5437501ZeShi	Mon Jul 29 16:57:51 2024 +1000	for testing
 a9e6766	zid5437501ZeShi	Mon Jul 29 16:57:30 2024 +1000	for testing
-6b5c1cc	zid5437501ZeShi	Mon Jul 29 16:10:25 2024 +1000	Add files via upload
+6b5c1cc	zid5437501ZeShi	Mon Jul 29 16:10:25 2024 +1000	Add files via upload'''
 
 # ----------------------------------------------------------------------------
 # Part 11: project 2 mini-presentation
@@ -496,8 +496,8 @@ a9e6766	zid5437501ZeShi	Mon Jul 29 16:57:30 2024 +1000	for testing
 # Please replace the """?""" with your team's presentation video link.
 # If you have set a password, please replace the """?""" with the actual password to ensure accessibility,
 # or leave the Presentation_Password variable as it is.
-Presentation_link = https://youtu.be/eege6rjTVm8
-Presentation_Password = No password
+Presentation_link = 'https://youtu.be/eege6rjTVm8'
+Presentation_Password = 'No password'
 
 
 def _test_get_avg():
