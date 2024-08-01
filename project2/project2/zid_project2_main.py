@@ -455,8 +455,8 @@ git_log = """?"""
 # Please replace the """?""" with your team's presentation video link.
 # If you have set a password, please replace the """?""" with the actual password to ensure accessibility,
 # or leave the Presentation_Password variable as it is.
-Presentation_link = """?"""
-Presentation_Password = """?"""
+Presentation_link = """https://youtu.be/eege6rjTVm8"""
+Presentation_Password = """No password"""
 
 
 def _test_get_avg():
