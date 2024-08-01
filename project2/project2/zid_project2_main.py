@@ -430,7 +430,47 @@ print(result)
 # .......
 #
 # Please replace the """?""" with your team's project 2 git log:
-git_log = """?"""
+git_log = """cab2c29	zid5444164xuanluo	Thu Aug 1 19:32:41 2024 +1000	Paste Presentation Link
+1368de4	zid5356208JingyiDing	Thu Aug 1 19:26:27 2024 +1000	test Q2 and Q5
+d9ca963	zid5356208JingyiDing	Thu Aug 1 19:23:40 2024 +1000	test Q1
+ebda50b	zid5444164xuanluo	Thu Aug 1 13:48:47 2024 +1000	change the test code
+4784385	zidz5292248ZiyinZhou	Thu Aug 1 11:38:39 2024 +1000	test and change
+9f58691	zidz5292248ZiyinZhou	Thu Aug 1 11:37:36 2024 +1000	test and change
+3df770a	zid5356208JingyiDing	Wed Jul 31 16:37:22 2024 +1000	test part8
+bdb5c7c	zid5339329BoxuanLi	Wed Jul 31 16:18:04 2024 +1000	Change in cha
+85f4844	zid5339329BoxuanLi	Wed Jul 31 16:15:00 2024 +1000	Change in etl
+0051b50	zid5339329BoxuanLi	Wed Jul 31 16:13:29 2024 +1000	Merge remote-tracking branch 'origin/main'
+4702778	zid5339329BoxuanLi	Wed Jul 31 16:11:32 2024 +1000	Change in etl
+2f4c504	zid5444164xuanluo	Wed Jul 31 15:47:06 2024 +1000	Change the code
+087bc3e	zid5444164xuanluo	Wed Jul 31 15:34:11 2024 +1000	changed
+974d057	zid5444164xuanluo	Wed Jul 31 15:31:51 2024 +1000	changed
+cad577d	zid5356208JingyiDing	Wed Jul 31 15:23:59 2024 +1000	change
+4e62f8c	zid5356208JingyiDing	Wed Jul 31 15:19:46 2024 +1000	change
+6718106	zid5356208JingyiDing	Wed Jul 31 15:18:55 2024 +1000	Merge remote-tracking branch 'origin/main'
+5031091	zid5444164xuanluo	Wed Jul 31 15:15:32 2024 +1000	Coding
+d609322	zidz5292248ZiyinZhou	Wed Jul 31 15:14:36 2024 +1000	testttt
+7251c95	zidz5292248ZiyinZhou	Wed Jul 31 15:06:20 2024 +1000	Log changed
+78d35eb	zidz5292248ZiyinZhou	Wed Jul 31 15:04:35 2024 +1000	Answer changed
+731e0f5	zid5444164xuanluo	Wed Jul 31 15:03:01 2024 +1000	Log
+ab6e452	zidz5292248ZiyinZhou	Wed Jul 31 14:59:44 2024 +1000	Test and change
+ec0ff48	zidz5292248ZiyinZhou	Wed Jul 31 14:58:27 2024 +1000	Test and change
+436cf46	zid5356208JingyiDing	Wed Jul 31 14:49:43 2024 +1000	TEST
+98125f7	zid5339329BoxuanLi	Wed Jul 31 14:43:29 2024 +1000	Change some code in etl
+23acbb8	zid5437501ZeShi	Wed Jul 31 14:40:56 2024 +1000	Q10 test
+b3b9f69	zid5437501ZeShi	Wed Jul 31 14:40:38 2024 +1000	Merge remote-tracking branch 'origin/main'
+f9ea9b4	zid5437501ZeShi	Wed Jul 31 14:40:16 2024 +1000	Q10 test
+288bb0a	zid5444164xuanluo	Wed Jul 31 14:38:59 2024 +1000	Answer changed
+4e70b2a	zid5356208JingyiDing	Wed Jul 31 14:31:06 2024 +1000	Q1 changed
+92ce65e	zid5444164xuanluo	Wed Jul 31 09:47:19 2024 +1000	Q7-Q10 and part9 finished
+3ca40da	zid5444164xuanluo	Wed Jul 31 09:43:18 2024 +1000	Q7-Q10 and part9 finished
+f453329	zid5437501ZeShi	Mon Jul 29 22:41:55 2024 +1000	Q6 Location update
+6fcf975	zid5437501ZeShi	Mon Jul 29 22:40:14 2024 +1000	Q6 Location update
+d9e61b3	zid5437501ZeShi	Mon Jul 29 22:29:03 2024 +1000	Q1-Q6 and data result data file(csv file)
+771cc25	zid5437501ZeShi	Mon Jul 29 17:09:17 2024 +1000	generate log
+829ebeb	zid5437501ZeShi	Mon Jul 29 16:58:23 2024 +1000	testt
+c79d457	zid5437501ZeShi	Mon Jul 29 16:57:51 2024 +1000	for testing
+a9e6766	zid5437501ZeShi	Mon Jul 29 16:57:30 2024 +1000	for testing
+6b5c1cc	zid5437501ZeShi	Mon Jul 29 16:10:25 2024 +1000	Add files via upload"""
 
 # ----------------------------------------------------------------------------
 # Part 11: project 2 mini-presentation
