@@ -388,9 +388,7 @@ ls_t = '1.5959'
 n_obs = '235'
 
 
-# <ADD THE t_stat FUNCTION HERE>
 import pandas as pd
-from scipy import stats
 ew_ls_pf_df = pd.read_csv('EW_LS_pf_df.csv')
 def t_stat(df: pd.DataFrame):
     ls_data = df['ls'].dropna()
