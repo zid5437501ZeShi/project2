@@ -21,4 +21,3 @@ print(f"The average monthly total volatility for TSLA in 2010 is {tsla_avg_month
 # Set the Q5_ANSWER
 Q5_ANSWER = tsla_avg_monthly_vol_2010
 Q5_ANSWER
-123
